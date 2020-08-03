@@ -1,0 +1,23 @@
+{
+  "name": "otus-qajs-course",
+  "version": "1.0.0",
+  "description": "This project is created to homeworks for otus qa js course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahtigalsolovej/otus-qajs-course-072020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahtigalsolovej/otus-qajs-course-072020/issues"
+  },
+  "homepage": "https://github.com/nahtigalsolovej/otus-qajs-course-072020#readme",
+  "devDependencies": {
+    "codeceptjs": "^2.6.7"
+  }
+}
