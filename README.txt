@@ -1,3 +1,4 @@
 # otus-qajs-course-072020
 
-This project for otus qa js course
+Project for otus qa js course.
+You need to install npm and codeceptJS to work with this project.
