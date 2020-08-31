@@ -6,6 +6,7 @@ Before(async (I) => {
   I.pressKey('Enter');
   I.fillField('#new-todo', 'Test task 2');
   I.pressKey('Enter');
+  I.see('2 items left');
 });
 
 const task1 = '//*[contains(text(),"Test task 1")]';
@@ -18,6 +19,7 @@ Scenario('Mark task as completed', (I) => {
       `${task2}/../..`,
       { class: 'completed ember-view' },
       );
+  I.see('1 item left');
 });
 
 Scenario('Switch tabs', (I) => {
@@ -37,6 +39,7 @@ Scenario('Delete task', (I) => {
   I.click(`${task2}/../*[@class="destroy"]`);
   I.seeElement(`${taskList}${task1}`);
   I.dontSeeElement(`${taskList}${task2}`);
+  I.see('1 item left');
 });
 
 Scenario('Clear completed tasks', (I) => {
@@ -56,4 +59,5 @@ Scenario('Mark all tasks as completed', (I) => {
       `${task2}/../..`,
       { class: 'completed ember-view' },
       );
+  I.see('0 items left');
 });
