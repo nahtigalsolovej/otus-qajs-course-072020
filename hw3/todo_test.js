@@ -21,13 +21,19 @@ Scenario('Mark task as completed', (I) => {
   I.see('1 item left');
 });
 
-Scenario('Switch tabs', (I) => {
+Scenario('Switch tab to active', (I) => {
   I.click(`${task2}/../input`);
   I.seeElement(`${taskList}${task1}`);
   I.seeElement(`${taskList}${task2}`);
   I.click('//a[@href="#/active"]');
   I.seeElement(`${taskList}${task1}`);
   I.dontSeeElement(`${taskList}${task2}`);
+});
+
+Scenario('Switch tab to completed', (I) => {
+  I.click(`${task2}/../input`);
+  I.seeElement(`${taskList}${task1}`);
+  I.seeElement(`${taskList}${task2}`);
   I.click('//a[@href="#/completed"]');
   I.seeElement(`${taskList}${task2}`);
   I.dontSeeElement(`${taskList}${task1}`);
