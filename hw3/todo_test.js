@@ -6,7 +6,6 @@ Before(async (I) => {
   I.pressKey('Enter');
   I.fillField('#new-todo', 'Test task 2');
   I.pressKey('Enter');
-  I.see('2 items left');
 });
 
 const task1 = '//*[contains(text(),"Test task 1")]';
