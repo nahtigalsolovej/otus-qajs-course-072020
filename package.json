@@ -22,7 +22,7 @@
     "@babel/core": "^7.11.6",
     "@babel/node": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
-    "codeceptjs": "^2.6.8",
+    "codeceptjs": "^3.0.0",
     "puppeteer": "^5.2.1"
   },
   "dependencies": {
